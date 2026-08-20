@@ -1,0 +1,6 @@
+{
+  "name": "AirportInspection.Presentation",
+  "rootNamespace": "AirportInspection.Presentation",
+  "references": ["AirportInspection.Domain", "AirportInspection.Application", "UnityEngine.UI"],
+  "autoReferenced": true
+}

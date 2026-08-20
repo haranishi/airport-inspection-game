@@ -1,0 +1,6 @@
+{
+  "name": "AirportInspection.Domain",
+  "rootNamespace": "AirportInspection.Domain",
+  "references": [],
+  "autoReferenced": true
+}

@@ -1,0 +1,8 @@
+{
+  "name": "AirportInspection.EditModeTests",
+  "rootNamespace": "AirportInspection.Tests",
+  "references": ["AirportInspection.Domain", "AirportInspection.Application"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": false
+}

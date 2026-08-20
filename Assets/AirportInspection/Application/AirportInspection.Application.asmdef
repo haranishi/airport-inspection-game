@@ -1,0 +1,6 @@
+{
+  "name": "AirportInspection.Application",
+  "rootNamespace": "AirportInspection.Application",
+  "references": ["AirportInspection.Domain"],
+  "autoReferenced": true
+}
