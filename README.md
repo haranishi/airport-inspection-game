@@ -22,10 +22,10 @@
 別のUnity batchmodeと同時実行しないでください。最初にScene生成兼コンパイルを行います。
 
 ```bash
-"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/Users/hara/Projects/airport-inspection-game" -executeMethod AirportInspection.Editor.AirportInspectionBuild.PrepareScene -logFile "/private/tmp/airport-compile.log"
-"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/Users/hara/Projects/airport-inspection-game" -runTests -testPlatform EditMode -testResults "/private/tmp/airport-editmode.xml" -logFile "/private/tmp/airport-tests.log"
-"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/Users/hara/Projects/airport-inspection-game" -executeMethod AirportInspection.Editor.AirportInspectionBuild.BuildMac -logFile "/private/tmp/airport-build.log"
-open "/Users/hara/Projects/airport-inspection-game/Builds/Mac/Airport Inspection.app"
+"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/path/to/airport-inspection-game" -executeMethod AirportInspection.Editor.AirportInspectionBuild.PrepareScene -logFile "/private/tmp/airport-compile.log"
+"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/path/to/airport-inspection-game" -runTests -testPlatform EditMode -testResults "/private/tmp/airport-editmode.xml" -logFile "/private/tmp/airport-tests.log"
+"/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity" -batchmode -nographics -quit -projectPath "/path/to/airport-inspection-game" -executeMethod AirportInspection.Editor.AirportInspectionBuild.BuildMac -logFile "/private/tmp/airport-build.log"
+open "/path/to/airport-inspection-game/Builds/Mac/Airport Inspection.app"
 ```
 
 Editorでは`Assets/Scenes/Inspection.unity`を開いてPlayします。`R`回転、`F`材質、`O`開披、`1/2/3`判定です。
@@ -33,3 +33,9 @@ Editorでは`Assets/Scenes/Inspection.unity`を開いてPlayします。`R`回�
 ## 現在の注意
 
 初回生成時にUnity Package ManagerのIPC制限とLicensing Client再接続停止が起きました。手動でロックやライセンスIPCを削除せず、他のUnity処理終了後に上記を直列実行してください。詳細はObsidianの`07_実装進捗・再開メモ`を正本とします。
+
+## ライセンス
+
+自作のコード・資料は [MIT License](LICENSE) で公開しています。
+外部ライブラリ・素材・フォントは各権利者のライセンスに従い、このMITライセンスでは再許諾しません。
+ソース公開は、サービスの一般提供・ストア配布・本番運用の安全性を保証するものではありません。
