@@ -1,5 +1,7 @@
 # Airport Inspection Game — local vertical slice
 
+現状の構成・データ境界・検証条件は[現状仕様](docs/current-implementation.md)を参照してください。
+
 架空空港の固定ブースで、X線風表示から荷物を検査するUnityローカル試作です。現在はコード作成済み・Unity未検証であり、完成ビルドではありません。
 
 ## 今ある範囲
